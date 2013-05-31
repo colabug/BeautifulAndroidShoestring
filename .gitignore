@@ -1,0 +1,13 @@
+build.xml
+gen/*
+local.properties
+out/*
+target/*
+.idea/*
+tmp/*
+*.diff
+*.swp
+.DS_Store
+*.iml
+
+.idea/workspace.xml
