@@ -7,27 +7,27 @@
 
     <!--Rectangle-->
     <View
-      android:layout_width="120dp"
-      android:layout_height="80dp"
-      android:background="@drawable/rectangle" />
+        android:layout_width="@dimen/rectangle_width"
+        android:layout_height="@dimen/rectangle_height"
+        android:background="@drawable/rectangle" />
 
     <!--Gradient-->
     <View
-      android:layout_width="120dp"
-      android:layout_height="80dp"
-      android:background="@drawable/gradient" />
+        android:layout_width="@dimen/rectangle_width"
+        android:layout_height="@dimen/rectangle_height"
+        android:background="@drawable/gradient" />
 
     <!--Angular gradient-->
     <View
-      android:layout_width="120dp"
-      android:layout_height="80dp"
-      android:background="@drawable/anglegradient" />
+        android:layout_width="@dimen/rectangle_width"
+        android:layout_height="@dimen/rectangle_height"
+        android:background="@drawable/anglegradient" />
 
     <!--Round rectangle-->
     <View
-      android:layout_width="120dp"
-      android:layout_height="80dp"
-      android:background="@drawable/round" />
+        android:layout_width="@dimen/rectangle_width"
+        android:layout_height="@dimen/rectangle_height"
+        android:background="@drawable/round" />
 
     <!--Button-->
     <Button
