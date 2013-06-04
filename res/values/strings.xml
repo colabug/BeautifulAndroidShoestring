@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">chiuki</string>
     <string name="BUTTON_TEXT">Push</string>
+    <string name="TEXT_SHADOW_STRING">Text Shadow</string>
 </resources>

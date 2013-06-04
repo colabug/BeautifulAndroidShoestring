@@ -27,6 +27,10 @@
             android:layout_height="@dimen/rectangle_height"
             android:background="@drawable/gradient" />
 
+        <TextView
+            android:text="@string/TEXT_SHADOW_STRING"
+            style="@style/ShadowText"/>
+
         <!--Angular gradient-->
         <View
             android:layout_width="@dimen/rectangle_width"
