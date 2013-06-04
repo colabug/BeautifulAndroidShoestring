@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/tile_background"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    style="@style/Match">
+    style="@style/Background">
 
     <!--Regular and rounded rectangles-->
     <LinearLayout
@@ -38,16 +35,16 @@
             style="@style/Rectangle"/>
     </LinearLayout>
 
-    <!--Text with shadow-->
-    <TextView
-        android:text="@string/TEXT_SHADOW_STRING"
-        style="@style/ShadowText"/>
-
     <!--Button-->
     <Button
         android:id="@+id/button"
         android:text="@string/BUTTON_TEXT"
         style="@style/Button"/>
+
+    <!--Text with shadow-->
+    <TextView
+        android:text="@string/SHADOW_TEXT"
+        style="@style/ShadowText"/>
 
     <!--Gradient text-->
     <TextView
@@ -58,6 +55,12 @@
     <!--Angled gradient text-->
     <TextView
         android:id="@+id/angled_gradient_text"
-        android:text="@string/GRADIENT_TEXT"
+        android:text="@string/ANGLED_GRADIENT_TEXT"
+        style="@style/LargeText"/>
+
+    <!--Custom font-->
+    <TextView
+        android:id="@+id/custom_font_text_view"
+        android:text="@string/SHADOW_TEXT"
         style="@style/LargeText"/>
 </LinearLayout>

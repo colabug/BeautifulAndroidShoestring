@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <!--Padding-->
+    <dimen name="standard_padding">6dp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+
+    <!--Text-->
+    <dimen name="text_size">48sp</dimen>
+    <dimen name="button_text_size">30sp</dimen>
+
+    <!--Shapes-->
     <dimen name="rectangle_height">60dp</dimen>
     <dimen name="rectangle_width">90dp</dimen>
     <dimen name="radius">5dp</dimen>
-    <dimen name="text_size">48sp</dimen>
-    <dimen name="standard_padding">6dp</dimen>
-    <dimen name="button_padding">12dp</dimen>
 </resources>

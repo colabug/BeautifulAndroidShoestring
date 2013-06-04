@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">chiuki</string>
-    <string name="BUTTON_TEXT">Push</string>
-    <string name="GRADIENT_TEXT">Gradient Text</string>
-    <string name="TEXT_SHADOW_STRING">Text Shadow</string>
+    <string name="APP_NAME">chiuki</string>
+    <string name="BUTTON_TEXT">Button State +\nText State</string>
+    <string name="GRADIENT_TEXT">Text Gradient</string>
+    <string name="ANGLED_GRADIENT_TEXT">Angled Gradient</string>
+    <string name="SHADOW_TEXT">Shadow Text</string>
+    <string name="CUSTOM_FONT_TEXT">Custom Font</string>
 </resources>

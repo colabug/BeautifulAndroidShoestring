@@ -3,7 +3,6 @@ package com.colabug.chiuki;
 import android.app.Activity;
 import android.graphics.*;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class BeautifulAndroidActivity extends Activity
@@ -14,9 +13,9 @@ public class BeautifulAndroidActivity extends Activity
         super.onCreate( savedInstanceState );
         setContentView( R.layout.main );
 
-        // Set typeface on button
-        Button button = (Button) findViewById( R.id.button );
-        button.setTypeface( getTypefaceFromAsset() );
+        // Set typeface
+        TextView textView = (TextView) findViewById( R.id.custom_font_text_view );
+        textView.setTypeface( getTypefaceFromAsset() );
 
         // Text gradient
         TextView gradientTextView = (TextView) findViewById( R.id.gradient_text );
