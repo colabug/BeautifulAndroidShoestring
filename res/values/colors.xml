@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <color name="LightPurple">#D0B5DF</color>
-    <color name="Purple">#9357B5</color>
     <color name="White">#ffffff</color>
     <color name="Black">#000000</color>
+    <color name="Red">#ff0000</color>
+    <color name="Blue">#0000ff</color>
+    <color name="Green">#00ff00</color>
+    <color name="Purple">#9357B5</color>
+    <color name="LightPurple">#D0B5DF</color>
 </resources>

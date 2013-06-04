@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:background="@drawable/tile_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    style="@style/Match">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/tile_background" />
-
+    <!--Regular and rounded rectangles-->
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center_horizontal">
+        android:orientation="horizontal"
+        style="@style/Wrap">
 
-        <!--Rectangle-->
+        <!--Regular rectangle-->
         <View
-            android:layout_width="@dimen/rectangle_width"
-            android:layout_height="@dimen/rectangle_height"
-            android:background="@drawable/rectangle" />
-
-        <!--Gradient-->
-        <View
-            android:layout_width="@dimen/rectangle_width"
-            android:layout_height="@dimen/rectangle_height"
-            android:background="@drawable/gradient" />
-
-        <TextView
-            android:text="@string/TEXT_SHADOW_STRING"
-            style="@style/ShadowText"/>
-
-        <!--Angular gradient-->
-        <View
-            android:layout_width="@dimen/rectangle_width"
-            android:layout_height="@dimen/rectangle_height"
-            android:background="@drawable/anglegradient" />
+            android:background="@drawable/rectangle"
+            style="@style/Rectangle"/>
 
         <!--Round rectangle-->
         <View
-            android:layout_width="@dimen/rectangle_width"
-            android:layout_height="@dimen/rectangle_height"
-            android:background="@drawable/round" />
+            android:background="@drawable/round"
+            style="@style/Rectangle"/>
+        </LinearLayout>
 
-        <!--Button-->
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/rectangle_height"
-            android:padding="@dimen/button_text_padding"
-            android:text="@string/BUTTON_TEXT"
-            android:textSize="@dimen/text_size"
-            android:textColor="@drawable/text"
-            android:background="@drawable/button" />
+    <!--Rectangles with gradients-->
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/Wrap">
+
+        <!--Gradient-->
+        <View
+            android:background="@drawable/gradient"
+            style="@style/Rectangle"/>
+
+        <!--Angular gradient-->
+        <View
+            android:background="@drawable/anglegradient"
+            style="@style/Rectangle"/>
     </LinearLayout>
-</RelativeLayout>
+
+    <!--Text with shadow-->
+    <TextView
+        android:text="@string/TEXT_SHADOW_STRING"
+        style="@style/ShadowText"/>
+
+    <!--Button-->
+    <Button
+        android:id="@+id/button"
+        android:text="@string/BUTTON_TEXT"
+        style="@style/Button"/>
+</LinearLayout>

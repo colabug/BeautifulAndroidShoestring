@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <style name="Match">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MatchWidth" parent="Match">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
     <style name="Wrap">
         <item name="android:layout_height">wrap_content</item>
@@ -10,6 +18,21 @@
     <style name="LargeText" parent="android:TextAppearance.Large">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Rectangle">
+        <item name="android:layout_height">@dimen/rectangle_height</item>
+        <item name="android:layout_width">@dimen/rectangle_width</item>
+        <item name="android:layout_margin">@dimen/standard_padding</item>
+    </style>
+
+    <style name="Button" parent="Rectangle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/standard_padding</item>
+        <item name="android:padding">@dimen/standard_padding</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@drawable/text</item>
+        <item name="android:background">@drawable/button</item>
     </style>
 
     <style name="ShadowText" parent="LargeText">
