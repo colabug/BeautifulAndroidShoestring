@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 public class BeautifulAndroidActivity extends Activity
 {
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate( Bundle savedInstanceState )
     {
@@ -23,14 +20,11 @@ public class BeautifulAndroidActivity extends Activity
 
         // Text gradient
         TextView gradientTextView = (TextView) findViewById( R.id.gradient_text );
-        gradientTextView.getPaint()
-                        .setShader( getLinearGradient( gradientTextView ) );
+        addGradientToTextView( gradientTextView );
 
         // Angled text gradient
         TextView angledGradientTextView = (TextView) findViewById( R.id.angled_gradient_text );
-        angledGradientTextView.getPaint()
-                              .setShader( getAngledShader(
-                              angledGradientTextView ) );
+        addAngledGradientToTextView( angledGradientTextView );
     }
 
     private Typeface getTypefaceFromAsset()
@@ -38,29 +32,41 @@ public class BeautifulAndroidActivity extends Activity
         return Typeface.createFromAsset( getAssets(), "Chunkfive.otf" );
     }
 
-    private Shader getAngledShader( TextView angledGradientTextView )
+    private void addGradientToTextView( TextView textView )
     {
-        Shader shader = new LinearGradient( 0,
-                                            0,
-                                            0,
-                                            angledGradientTextView.getTextSize(),
-                                            Color.RED,
-                                            Color.BLUE,
-                                            Shader.TileMode.MIRROR );
+        textView.getPaint().setShader( getGradientShader( textView ) );
+    }
+
+    private void addAngledGradientToTextView( TextView textView )
+    {
+        textView.getPaint().setShader( getAngledGradientShader( textView ) );
+    }
+
+    private Shader getGradientShader( TextView textView )
+    {
+        return getShader( textView, Shader.TileMode.CLAMP );
+    }
+
+    private Shader getAngledGradientShader( TextView textView )
+    {
+        Shader shader = getShader( textView, Shader.TileMode.MIRROR );
+        shader = addMatrixToShader( shader );
+        return shader;
+    }
+
+    private Shader getShader( TextView textView, Shader.TileMode tileMode )
+    {
+        return new LinearGradient( 0, 0, 0,
+                                   textView.getTextSize(),
+                                   Color.RED, Color.BLUE,
+                                   tileMode );
+    }
+
+    private Shader addMatrixToShader( Shader shader )
+    {
         Matrix matrix = new Matrix();
         matrix.setRotate( 45 );
         shader.setLocalMatrix( matrix );
         return shader;
-    }
-
-    private LinearGradient getLinearGradient( TextView textView )
-    {
-        return new LinearGradient( 0,
-                                   0,
-                                   0,
-                                   textView.getTextSize(),
-                                   Color.RED,
-                                   Color.BLUE,
-                                   Shader.TileMode.CLAMP );
     }
 }
