@@ -54,4 +54,10 @@
         android:id="@+id/gradient_text"
         android:text="@string/GRADIENT_TEXT"
         style="@style/LargeText"/>
+
+    <!--Angled gradient text-->
+    <TextView
+        android:id="@+id/angled_gradient_text"
+        android:text="@string/GRADIENT_TEXT"
+        style="@style/LargeText"/>
 </LinearLayout>
