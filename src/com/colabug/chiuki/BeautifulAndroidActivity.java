@@ -1,7 +1,9 @@
 package com.colabug.chiuki;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class BeautifulAndroidActivity extends Activity
 {
@@ -13,5 +15,10 @@ public class BeautifulAndroidActivity extends Activity
     {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.main );
+
+        // Set typeface on button
+        Button button = (Button) findViewById( R.id.button );
+        Typeface typeface = Typeface.createFromAsset( getAssets(), "Chunkfive.otf" );
+        button.setTypeface( typeface );
     }
 }

@@ -12,7 +12,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
 
         <!--Rectangle-->
         <View
@@ -40,6 +41,7 @@
 
         <!--Button-->
         <Button
+            android:id="@+id/button"
             android:layout_width="@dimen/rectangle_width"
             android:layout_height="@dimen/rectangle_height"
             android:textColor="@drawable/text"
