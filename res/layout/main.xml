@@ -46,10 +46,12 @@
         <!--Button-->
         <Button
             android:id="@+id/button"
-            android:layout_width="@dimen/rectangle_width"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/rectangle_height"
-            android:textColor="@drawable/text"
+            android:padding="@dimen/button_text_padding"
             android:text="@string/BUTTON_TEXT"
+            android:textSize="@dimen/text_size"
+            android:textColor="@drawable/text"
             android:background="@drawable/button" />
     </LinearLayout>
 </RelativeLayout>

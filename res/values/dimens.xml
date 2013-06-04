@@ -5,4 +5,5 @@
     <dimen name="rectangle_width">90dp</dimen>
     <dimen name="radius">5dp</dimen>
     <dimen name="text_size">48sp</dimen>
+    <dimen name="button_text_padding">6dp</dimen>
 </resources>
