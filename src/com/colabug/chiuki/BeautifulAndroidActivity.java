@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class BeautifulAndroidActivity extends Activity
 {
-    private static final String CUSTOM_FONT_FILE = "Chunkfive.otf";
+    private static final String CUSTOM_FONT_FILE = "KaushanScriptRegular.otf";
 
     @Override
     public void onCreate( Bundle savedInstanceState )

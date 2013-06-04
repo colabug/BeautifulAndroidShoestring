@@ -61,6 +61,6 @@
     <!--Custom font-->
     <TextView
         android:id="@+id/custom_font_text_view"
-        android:text="@string/SHADOW_TEXT"
+        android:text="@string/CUSTOM_FONT_TEXT"
         style="@style/LargeText"/>
 </LinearLayout>
