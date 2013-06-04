@@ -18,6 +18,7 @@
     <style name="LargeText" parent="android:TextAppearance.Large">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
     </style>
 
     <style name="Rectangle">
@@ -26,17 +27,14 @@
         <item name="android:layout_margin">@dimen/standard_padding</item>
     </style>
 
-    <style name="Button" parent="Rectangle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_margin">@dimen/standard_padding</item>
-        <item name="android:padding">@dimen/standard_padding</item>
+    <style name="Button" parent="Wrap">
+        <item name="android:padding">@dimen/button_padding</item>
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textColor">@drawable/text</item>
         <item name="android:background">@drawable/button</item>
     </style>
 
     <style name="ShadowText" parent="LargeText">
-        <item name="android:textSize">@dimen/text_size</item>
         <item name="android:textColor">@color/White</item>
         <item name="android:shadowColor">@color/Purple</item>
         <item name="android:shadowDx">5</item>

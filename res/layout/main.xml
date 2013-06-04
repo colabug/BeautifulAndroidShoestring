@@ -48,4 +48,10 @@
         android:id="@+id/button"
         android:text="@string/BUTTON_TEXT"
         style="@style/Button"/>
+
+    <!--Gradient text-->
+    <TextView
+        android:id="@+id/gradient_text"
+        android:text="@string/GRADIENT_TEXT"
+        style="@style/LargeText"/>
 </LinearLayout>
