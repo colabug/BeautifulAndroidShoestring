@@ -7,28 +7,40 @@ import android.widget.TextView;
 
 public class BeautifulAndroidActivity extends Activity
 {
+    private static final String CUSTOM_FONT_FILE = "Chunkfive.otf";
+
     @Override
     public void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.main );
 
-        // Set typeface
+        setCustomTypeface();
+        setTextGradient();
+        setAngledTextGradient();
+    }
+
+    private void setCustomTypeface()
+    {
         TextView textView = (TextView) findViewById( R.id.custom_font_text_view );
         textView.setTypeface( getTypefaceFromAsset() );
-
-        // Text gradient
-        TextView gradientTextView = (TextView) findViewById( R.id.gradient_text );
-        addGradientToTextView( gradientTextView );
-
-        // Angled text gradient
-        TextView angledGradientTextView = (TextView) findViewById( R.id.angled_gradient_text );
-        addAngledGradientToTextView( angledGradientTextView );
     }
 
     private Typeface getTypefaceFromAsset()
     {
-        return Typeface.createFromAsset( getAssets(), "Chunkfive.otf" );
+        return Typeface.createFromAsset( getAssets(), CUSTOM_FONT_FILE );
+    }
+
+    private void setTextGradient()
+    {
+        TextView gradientTextView = (TextView) findViewById( R.id.gradient_text );
+        addGradientToTextView( gradientTextView );
+    }
+
+    private void setAngledTextGradient()
+    {
+        TextView angledGradientTextView = (TextView) findViewById( R.id.angled_gradient_text );
+        addAngledGradientToTextView( angledGradientTextView );
     }
 
     private void addGradientToTextView( TextView textView )
