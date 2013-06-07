@@ -10,6 +10,10 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="MatchVerticalCentered" parent="MatchVertical">
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="MatchWidth" parent="Match">
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -30,7 +34,7 @@
         <item name="android:layout_margin">@dimen/icon_padding</item>
     </style>
 
-    <style name="Background" parent="MatchVertical">
+    <style name="TiledBackground" parent="MatchVertical">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/tile_background</item>
     </style>

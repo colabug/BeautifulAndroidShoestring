@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.colabug.chiuki"
-          android:versionCode="1"
-          android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="17"/><application
-    android:label="@string/APP_NAME"
-    android:icon="@drawable/ic_launcher">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.colabug.chiuki"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17"/>
+
+    <application
+        android:label="@string/APP_NAME"
+        android:icon="@drawable/ic_launcher">
+
         <activity
             android:name="BeautifulAndroidActivity"
             android:label="@string/APP_NAME">
@@ -14,5 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".BeautifulTextActivity"/>
+
+        <activity android:name=".BeautifulIconsActivity"/>
     </application>
 </manifest>
