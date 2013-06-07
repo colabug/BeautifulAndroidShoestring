@@ -1,0 +1,6 @@
+Heavily based on Chiu-Ki Chan's presentation "Beautiful Android on a Shoestring."
+
+    http://chiuki.github.io/beautiful-android
+
+I abstracted dimensions, styles, colors, etc. and added activities for text, icon,
+and shapes.
