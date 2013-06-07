@@ -2,7 +2,8 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/MatchVerticalCentered">
+    android:orientation="vertical"
+    style="@style/CenteredTiledBackground">
 
     <!--Text with shadow-->
     <TextView
@@ -32,4 +33,9 @@
         android:id="@+id/icon_button"
         android:text="@string/START_ICON_BUTTON_TEXT"
         style="@style/Button"/>
+
+    <!--Background description-->
+    <TextView
+        android:text="@string/BACKGROUND_EXPLANATION"
+        style="@style/ExplanationText"/>
 </LinearLayout>

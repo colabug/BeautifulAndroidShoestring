@@ -21,4 +21,7 @@
     <string name="ICON_CAMERA">C</string>
     <string name="ICON_MUSIC">M</string>
     <string name="ICON_LEAF">L</string>
+    <string name="ICON_EXPLANATION">Icons use a custom icon font from icomoon (asset: icomoon.ttf). It\'s a way to fake vector graphics on Android.</string>
+    <string name="ICON_EXPLANATION2">Uses a custom view component to show the text (IconTextView.java). Click the icon to see the letters that are assigned for each icon.</string>
+    <string name="BACKGROUND_EXPLANATION">*Uses a tiled background</string>
 </resources>

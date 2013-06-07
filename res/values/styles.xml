@@ -6,6 +6,11 @@
         <item name="android:layout_width">wrap_content</item>
     </style>
 
+    <style name="WrapWidthCenterHorizontal" parent="Wrap">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
     <style name="Match">
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">match_parent</item>
@@ -13,6 +18,10 @@
 
     <style name="MatchVertical" parent="Match">
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchVerticalCentered" parent="MatchVertical">
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="MatchVerticalCenterHorizontal" parent="MatchVertical">
@@ -39,6 +48,12 @@
         <item name="android:layout_marginTop">@dimen/explanation_top_padding</item>
     </style>
 
+    <style name="ExplanationTextCenteredWithSideMargin" parent="ExplanationText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/standard_padding</item>
+        <item name="android:layout_marginRight">@dimen/standard_padding</item>
+    </style>
+
     <style name="IconText" parent="LargeText">
         <item name="android:textSize">@dimen/icon_text_size</item>
         <item name="android:layout_margin">@dimen/icon_padding</item>
@@ -49,7 +64,7 @@
     </style>
 
     <style name="CenteredTiledBackground" parent="TiledBackground">
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
     <style name="Rectangle">

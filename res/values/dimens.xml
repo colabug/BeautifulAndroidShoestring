@@ -17,5 +17,5 @@
     <dimen name="explanation_text_size">12sp</dimen>
 
     <!--Icons-->
-    <dimen name="icon_text_size">90sp</dimen>
+    <dimen name="icon_text_size">120sp</dimen>
 </resources>
