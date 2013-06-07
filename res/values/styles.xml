@@ -29,24 +29,38 @@
         <item name="android:textSize">@dimen/text_size</item>
     </style>
 
+    <style name="ExplanationText" parent="LargeText">
+        <item name="android:textSize">@dimen/explanation_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/standard_padding</item>
+        <item name="android:layout_marginTop">@dimen/explanation_top_padding</item>
+    </style>
+
     <style name="IconText" parent="LargeText">
         <item name="android:textSize">@dimen/icon_text_size</item>
         <item name="android:layout_margin">@dimen/icon_padding</item>
     </style>
 
     <style name="TiledBackground" parent="MatchVertical">
-        <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/tile_background</item>
+    </style>
+
+    <style name="CenteredTiledBackground" parent="TiledBackground">
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="Rectangle">
         <item name="android:layout_height">@dimen/rectangle_height</item>
         <item name="android:layout_width">@dimen/rectangle_width</item>
-        <item name="android:layout_margin">@dimen/standard_padding</item>
+        <item name="android:layout_marginLeft">@dimen/standard_padding</item>
+        <item name="android:layout_marginRight">@dimen/standard_padding</item>
+    </style>
+
+    <style name="MatchWidthRectangle" parent="Rectangle">
+        <item name="android:layout_width">match_parent</item>
     </style>
 
     <style name="Button" parent="Wrap">
-        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:padding">@dimen/standard_padding</item>
         <item name="android:textSize">@dimen/button_text_size</item>
         <item name="android:textColor">@drawable/text</item>
         <item name="android:background">@drawable/button</item>

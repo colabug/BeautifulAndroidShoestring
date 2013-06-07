@@ -2,19 +2,20 @@
 
 <resources>
     <!--Padding-->
-    <dimen name="standard_padding">6dp</dimen>
-    <dimen name="button_padding">12dp</dimen>
+    <dimen name="standard_padding">12dp</dimen>
+    <dimen name="explanation_top_padding">2dp</dimen>
+    <dimen name="icon_padding">20dp</dimen>
+
+    <!--Shapes-->
+    <dimen name="rectangle_height">75dp</dimen>
+    <dimen name="rectangle_width">110dp</dimen>
+    <dimen name="radius">5dp</dimen>
 
     <!--Text-->
     <dimen name="text_size">40sp</dimen>
     <dimen name="button_text_size">20sp</dimen>
+    <dimen name="explanation_text_size">12sp</dimen>
 
     <!--Icons-->
     <dimen name="icon_text_size">60sp</dimen>
-    <dimen name="icon_padding">20dp</dimen>
-
-    <!--Shapes-->
-    <dimen name="rectangle_height">60dp</dimen>
-    <dimen name="rectangle_width">90dp</dimen>
-    <dimen name="radius">5dp</dimen>
 </resources>

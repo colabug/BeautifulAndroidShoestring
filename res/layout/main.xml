@@ -2,23 +2,28 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/TiledBackground">
+    style="@style/CenteredTiledBackground">
 
-    <!--Regular and rounded rectangles-->
-    <LinearLayout
-        android:orientation="horizontal"
-        style="@style/Wrap">
+    <!--Regular rectangle-->
+    <View
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="@dimen/standard_padding"
+        style="@style/MatchWidthRectangle"/>
 
-        <!--Regular rectangle-->
-        <View
-            android:background="@drawable/rectangle"
-            style="@style/Rectangle"/>
+    <!--Rectangle explanation-->
+    <TextView
+        android:text="@string/RECTANGLE_EXPLANATION"
+        style="@style/ExplanationText"/>
 
-        <!--Round rectangle-->
-        <View
-            android:background="@drawable/round"
-            style="@style/Rectangle"/>
-        </LinearLayout>
+    <!--Rounded rectangle-->
+    <View
+        android:background="@drawable/round"
+        style="@style/Rectangle"/>
+
+    <!--Rounded rectangle explanation-->
+    <TextView
+        android:text="@string/ROUNDED_RECTANGLE_EXPLANATION"
+        style="@style/ExplanationText"/>
 
     <!--Rectangles with gradients-->
     <LinearLayout
@@ -36,9 +41,20 @@
             style="@style/Rectangle"/>
     </LinearLayout>
 
+    <!--Gradient explanations-->
+    <TextView
+        android:text="@string/GRADIENT_RECTANGLE_EXPLANATION"
+        style="@style/ExplanationText"/>
+
     <!--Button-->
     <Button
         android:id="@+id/text_button"
-        android:text="@string/BUTTON_TEXT"
+        android:layout_marginTop="@dimen/standard_padding"
+        android:text="@string/START_TEXT_BUTTON_TEXT"
         style="@style/Button"/>
+
+    <!--Gradient explanations-->
+    <TextView
+        android:text="@string/BUTTON_EXPLANATION"
+        style="@style/ExplanationText"/>
 </LinearLayout>

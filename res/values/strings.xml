@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="APP_NAME">chiuki</string>
-    <string name="BUTTON_TEXT">Button State +\nText State</string>
+    <string name="APP_NAME">Beautiful Android on a Shoestring</string>
+
+    <!--Rectangles-->
+    <string name="RECTANGLE_EXPLANATION">Rectangle drawn using XML</string>
+    <string name="ROUNDED_RECTANGLE_EXPLANATION">Rounded rectangle (bounded width)</string>
+    <string name="GRADIENT_RECTANGLE_EXPLANATION">Standard and angled gradients</string>
+    <string name="START_TEXT_BUTTON_TEXT">Show\nText Examples</string>
+    <string name="BUTTON_EXPLANATION">Uses button state and text state\ndrawables to react to user input.</string>
+
+    <!--Text-->
     <string name="GRADIENT_TEXT">Text Gradient</string>
     <string name="ANGLED_GRADIENT_TEXT">Angled Gradient</string>
     <string name="SHADOW_TEXT">Shadow Text</string>
     <string name="CUSTOM_FONT_TEXT">Custom Font</string>
+    <string name="START_ICON_BUTTON_TEXT">See Icon Examples</string>
+
+    <!--Icons-->
     <string name="ICON_ANDROID">A</string>
     <string name="ICON_CAMERA">C</string>
     <string name="ICON_MUSIC">M</string>

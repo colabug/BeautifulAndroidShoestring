@@ -30,6 +30,6 @@
     <!--Button-->
     <Button
         android:id="@+id/icon_button"
-        android:text="@string/BUTTON_TEXT"
+        android:text="@string/START_ICON_BUTTON_TEXT"
         style="@style/Button"/>
 </LinearLayout>
