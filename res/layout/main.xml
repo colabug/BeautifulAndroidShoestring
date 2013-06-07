@@ -63,4 +63,7 @@
         android:id="@+id/custom_font_text_view"
         android:text="@string/CUSTOM_FONT_TEXT"
         style="@style/LargeText"/>
+
+    <!--Icon fonts-->
+    <include layout="@layout/icons" />
 </LinearLayout>

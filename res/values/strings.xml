@@ -6,4 +6,8 @@
     <string name="ANGLED_GRADIENT_TEXT">Angled Gradient</string>
     <string name="SHADOW_TEXT">Shadow Text</string>
     <string name="CUSTOM_FONT_TEXT">Custom Font</string>
+    <string name="ICON_ANDROID">A</string>
+    <string name="ICON_CAMERA">C</string>
+    <string name="ICON_MUSIC">M</string>
+    <string name="ICON_LEAF">L</string>
 </resources>

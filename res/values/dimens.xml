@@ -6,8 +6,12 @@
     <dimen name="button_padding">12dp</dimen>
 
     <!--Text-->
-    <dimen name="text_size">48sp</dimen>
-    <dimen name="button_text_size">30sp</dimen>
+    <dimen name="text_size">40sp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+
+    <!--Icons-->
+    <dimen name="icon_text_size">60sp</dimen>
+    <dimen name="icon_padding">20dp</dimen>
 
     <!--Shapes-->
     <dimen name="rectangle_height">60dp</dimen>
