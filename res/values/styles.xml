@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <!--==============General styles==============-->
     <style name="Wrap">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -36,6 +37,16 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
+    <!--==============Background styles==============-->
+    <style name="TiledBackground" parent="Match">
+        <item name="android:background">@drawable/tile_background</item>
+    </style>
+
+    <style name="CenteredTiledBackground" parent="TiledBackground">
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!--==============Text styles==============-->
     <style name="LargeText" parent="android:TextAppearance.Large">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -60,14 +71,25 @@
         <item name="android:layout_margin">@dimen/icon_padding</item>
     </style>
 
-    <style name="TiledBackground" parent="Match">
-        <item name="android:background">@drawable/tile_background</item>
+    <style name="ShadowText" parent="LargeText">
+        <item name="android:textColor">@color/White</item>
+        <item name="android:shadowColor">@color/Black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">-5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
-    <style name="CenteredTiledBackground" parent="TiledBackground">
-        <item name="android:layout_gravity">center_horizontal</item>
+    <!--==============Button styles==============-->
+    <style name="Button" parent="MatchWidth">
+        <item name="android:layout_marginLeft">@dimen/standard_padding</item>
+        <item name="android:layout_marginRight">@dimen/standard_padding</item>
+        <item name="android:padding">@dimen/standard_padding</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@drawable/text</item>
+        <item name="android:background">@drawable/button</item>
     </style>
 
+    <!--==============Rectangle styles==============-->
     <style name="Rectangle">
         <item name="android:layout_height">@dimen/rectangle_height</item>
         <item name="android:layout_width">@dimen/rectangle_width</item>
@@ -77,20 +99,5 @@
 
     <style name="MatchWidthRectangle" parent="Rectangle">
         <item name="android:layout_width">match_parent</item>
-    </style>
-
-    <style name="Button" parent="Wrap">
-        <item name="android:padding">@dimen/standard_padding</item>
-        <item name="android:textSize">@dimen/button_text_size</item>
-        <item name="android:textColor">@drawable/text</item>
-        <item name="android:background">@drawable/button</item>
-    </style>
-
-    <style name="ShadowText" parent="LargeText">
-        <item name="android:textColor">@color/White</item>
-        <item name="android:shadowColor">@color/Black</item>
-        <item name="android:shadowDx">5</item>
-        <item name="android:shadowDy">-5</item>
-        <item name="android:shadowRadius">5</item>
     </style>
 </resources>
