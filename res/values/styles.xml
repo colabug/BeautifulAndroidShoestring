@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <style name="Wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
     <style name="Match">
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">match_parent</item>
@@ -10,17 +15,16 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="MatchVerticalCentered" parent="MatchVertical">
-        <item name="android:gravity">center</item>
+    <style name="MatchVerticalCenterHorizontal" parent="MatchVertical">
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="MatchWidth" parent="Match">
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="Wrap">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+    <style name="MatchWidthHorizontal" parent="MatchWidth">
+        <item name="android:orientation">horizontal</item>
     </style>
 
     <style name="LargeText" parent="android:TextAppearance.Large">
@@ -40,7 +44,7 @@
         <item name="android:layout_margin">@dimen/icon_padding</item>
     </style>
 
-    <style name="TiledBackground" parent="MatchVertical">
+    <style name="TiledBackground" parent="Match">
         <item name="android:background">@drawable/tile_background</item>
     </style>
 

@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="center"
-    style="@style/MatchWidth">
+    style="@style/CenteredTiledBackground">
 
-    <!--Android-->
-    <com.colabug.chiuki.IconTextView
-        android:text="@string/ICON_ANDROID"
-        style="@style/IconText"/>
+    <!--Android and camera-->
+    <LinearLayout
+        android:id="@+id/android_and_camera_layout"
+        android:gravity="center"
+        style="@style/MatchWidthHorizontal">
 
-    <!--Camera-->
-    <com.colabug.chiuki.IconTextView
-        android:text="@string/ICON_CAMERA"
-        style="@style/IconText"/>
+        <!--Android-->
+        <com.colabug.chiuki.IconTextView
+            android:text="@string/ICON_ANDROID"
+            style="@style/IconText"/>
 
-    <!--Music-->
-    <com.colabug.chiuki.IconTextView
-        android:text="@string/ICON_MUSIC"
-        style="@style/IconText"/>
+        <!--Camera-->
+        <com.colabug.chiuki.IconTextView
+            android:text="@string/ICON_CAMERA"
+            style="@style/IconText"/>
+    </LinearLayout>
 
-    <!--Leaf-->
-    <com.colabug.chiuki.IconTextView
-        android:text="@string/ICON_LEAF"
-        style="@style/IconText"/>
-</LinearLayout>
+    <!--Music and leaf-->
+    <LinearLayout
+        android:layout_below="@id/android_and_camera_layout"
+        android:gravity="center"
+        style="@style/MatchWidthHorizontal">
+
+        <!--Music-->
+        <com.colabug.chiuki.IconTextView
+            android:text="@string/ICON_MUSIC"
+            style="@style/IconText"/>
+
+        <!--Leaf-->
+        <com.colabug.chiuki.IconTextView
+            android:text="@string/ICON_LEAF"
+            style="@style/IconText"/>
+    </LinearLayout>
+</RelativeLayout>

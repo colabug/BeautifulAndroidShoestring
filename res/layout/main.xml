@@ -2,7 +2,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/CenteredTiledBackground">
+    style="@style/MatchVerticalCenterHorizontal">
 
     <!--Regular rectangle-->
     <View
