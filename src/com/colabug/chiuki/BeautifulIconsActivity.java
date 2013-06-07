@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class BeautifulIconsActivity extends Activity
 {
+    private static final String BASE_TEXT = "Icon font text: ";
+
     public void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
@@ -40,7 +42,7 @@ public class BeautifulIconsActivity extends Activity
             public void onClick( View view )
             {
                 TextView textView = (TextView) view;
-                String toastText = "Icon font text: " + textView.getText();
+                String toastText = BASE_TEXT + textView.getText();
                 Toast.makeText( BeautifulIconsActivity.this,
                                 toastText,
                                 Toast.LENGTH_SHORT ).show();

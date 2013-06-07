@@ -7,7 +7,7 @@
     <string name="ROUNDED_RECTANGLE_EXPLANATION">Rounded rectangle (bounded width)</string>
     <string name="GRADIENT_RECTANGLE_EXPLANATION">Standard and angled gradients</string>
     <string name="START_TEXT_BUTTON_TEXT">Show Text\nExamples</string>
-    <string name="BUTTON_EXPLANATION">Uses button state and text state\ndrawables to react to user input.</string>
+    <string name="BUTTON_EXPLANATION">Uses button state and text state drawables to react to user input.</string>
 
     <!--Text-->
     <string name="GRADIENT_TEXT">Text Gradient</string>

@@ -2,6 +2,7 @@
 
 <resources>
     <!--Padding-->
+    <dimen name="small_top_padding">4dp</dimen>
     <dimen name="standard_padding">12dp</dimen>
     <dimen name="explanation_top_padding">2dp</dimen>
     <dimen name="icon_padding">20dp</dimen>
@@ -9,7 +10,7 @@
     <!--Shapes-->
     <dimen name="rectangle_height">75dp</dimen>
     <dimen name="rectangle_width">110dp</dimen>
-    <dimen name="radius">5dp</dimen>
+    <dimen name="radius">15dp</dimen>
 
     <!--Text-->
     <dimen name="text_size">40sp</dimen>
@@ -17,7 +18,7 @@
 
     <!--Buttons-->
     <dimen name="button_text_size">20sp</dimen>
-    <dimen name="button_margin_top">60dp</dimen>
+    <dimen name="button_margin_top">40dp</dimen>
 
     <!--Icons-->
     <dimen name="icon_text_size">120sp</dimen>
