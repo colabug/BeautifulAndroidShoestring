@@ -13,8 +13,11 @@
 
     <!--Text-->
     <dimen name="text_size">40sp</dimen>
-    <dimen name="button_text_size">20sp</dimen>
     <dimen name="explanation_text_size">12sp</dimen>
+
+    <!--Buttons-->
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="button_margin_top">60dp</dimen>
 
     <!--Icons-->
     <dimen name="icon_text_size">120sp</dimen>

@@ -6,7 +6,7 @@
     <string name="RECTANGLE_EXPLANATION">Rectangle drawn using XML</string>
     <string name="ROUNDED_RECTANGLE_EXPLANATION">Rounded rectangle (bounded width)</string>
     <string name="GRADIENT_RECTANGLE_EXPLANATION">Standard and angled gradients</string>
-    <string name="START_TEXT_BUTTON_TEXT">Show\nText Examples</string>
+    <string name="START_TEXT_BUTTON_TEXT">Show Text\nExamples</string>
     <string name="BUTTON_EXPLANATION">Uses button state and text state\ndrawables to react to user input.</string>
 
     <!--Text-->
@@ -14,7 +14,7 @@
     <string name="ANGLED_GRADIENT_TEXT">Angled Gradient</string>
     <string name="SHADOW_TEXT">Shadow Text</string>
     <string name="CUSTOM_FONT_TEXT">Custom Font</string>
-    <string name="START_ICON_BUTTON_TEXT">See Icon Examples</string>
+    <string name="START_ICON_BUTTON_TEXT">Show Icon\nExamples</string>
 
     <!--Icons-->
     <string name="ICON_ANDROID">A</string>

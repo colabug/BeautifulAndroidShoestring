@@ -40,6 +40,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_margin">@dimen/standard_padding</item>
     </style>
 
     <style name="ExplanationText" parent="LargeText">
@@ -87,7 +88,7 @@
 
     <style name="ShadowText" parent="LargeText">
         <item name="android:textColor">@color/White</item>
-        <item name="android:shadowColor">@color/Purple</item>
+        <item name="android:shadowColor">@color/Black</item>
         <item name="android:shadowDx">5</item>
         <item name="android:shadowDy">-5</item>
         <item name="android:shadowRadius">5</item>

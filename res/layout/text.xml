@@ -3,6 +3,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:gravity="center"
     style="@style/CenteredTiledBackground">
 
     <!--Text with shadow-->
@@ -32,6 +33,7 @@
     <Button
         android:id="@+id/icon_button"
         android:text="@string/START_ICON_BUTTON_TEXT"
+        android:layout_marginTop="@dimen/button_margin_top"
         style="@style/Button"/>
 
     <!--Background description-->
